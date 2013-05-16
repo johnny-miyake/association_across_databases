@@ -29,3 +29,4 @@ mysql> create table user_actions (id int not null primary key auto_increment, us
 => [#<UserAction id: 1, user_id: 1, action: "user's action #1">,
  #<UserAction id: 2, user_id: 1, action: "user's action #2">]
 ```
+hoge
