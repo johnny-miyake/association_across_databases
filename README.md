@@ -1,5 +1,5 @@
 # association_across_databases
-This is a small example project which handles two different DBs and associations of them.
+This is a small example project which handles two different DBs and the association of them.
 
 This project supposes that there is an application DB (Sqlite3) and external logging DB (MySQL) that is also used by other systems.
 
