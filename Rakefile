@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-JoinAcrossDatabases::Application.load_tasks
+AssociationAcrossDatabases::Application.load_tasks
