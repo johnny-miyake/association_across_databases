@@ -59,7 +59,7 @@ This project includes two models. One of them is `User` model and is used for ma
 
 This project includes a migration file for `users` table on the application DB (Sqlite3), but doesn't include the migration file for `user_actions` table on logging DB (MySQL), because this project supposes the logging DB is also used by other systems and isn't managed by Rails.
 
-In `app/models/user_action.rb`, `establish_connection :log_db` means that  `UserAction` model corresponds to `user_action` table on the database which is configured as `log_db` in `config/database.yml`.
+In `app/models/user_action.rb:2`, `establish_connection :log_db` means that  `UserAction` model corresponds to `user_action` table on the database which is configured as `log_db` in `config/database.yml`.
 
 
 
