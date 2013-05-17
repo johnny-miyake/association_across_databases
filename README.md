@@ -10,7 +10,8 @@ You can try this project as below.
 
 2. Create `config/database.yml` as a symbolic link
 ```sh
-ln -s config/database.ymls/database.yml.development config/database.yml
+$ cd config
+$ ln -s database.ymls/database.yml.development database.yml
 ```
 3. Create database on Sqlite3
 ```sh
