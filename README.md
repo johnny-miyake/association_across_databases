@@ -8,13 +8,7 @@ You can try this project as below.
 
 1. Edit `log_db` section in `config/database.yml` to adjust it to your MySQL
 
-2. Create database on MySQL
-```mysql
-mysql> create table user_actions (id int not null primary key auto_increment, user_id int not null, action varchar(128));
-Query OK, 0 rows affected (0.01 sec)
-```
-
-3. Create database on Sqlite3
+2. Create database on Sqlite3
 ```sh
 $ rake db:create
 $ rake db:migrate
@@ -24,7 +18,19 @@ $ rake db:migrate
 ==  CreateUsers: migrated (0.0016s) ===========================================
 ```
 
-4. Try creating, showing, confirm associations with `rails console`.
+3. Create database on MySQL
+```sh
+rake db:create RAILS_ENV=log_db_development
+```
+
+4. Create a table on MySQL
+```mysql
+mysql> use log_db_development;
+mysql> create table user_actions (id int not null primary key auto_increment, user_id int not null, action varchar(128));
+Query OK, 0 rows affected (0.01 sec)
+```
+
+5. Try creating, showing, confirm associations with `rails console`.
 ```ruby
 $ rails console
  [1] pry(main)> u = User.create name: "Johnny"
