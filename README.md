@@ -6,7 +6,7 @@ This project supposes that there is an application DB (Sqlite3) and external log
 ## Try it
 You can try this project as below.
 
-1. Edit `log_db` section in `config/database.yml` to adjust it to your MySQL
+1. Edit `log_db_development` section in `config/database.yml` to adjust it to your MySQL
 
 2. Create database on Sqlite3
 ```sh
@@ -65,7 +65,7 @@ This project includes two models. One of them is `User` model and is used for ma
 
 This project includes a migration file for `users` table on the application DB (Sqlite3), but doesn't include the migration file for `user_actions` table on logging DB (MySQL), because this project supposes the logging DB is also used by other systems and isn't managed by Rails.
 
-In `app/models/user_action.rb:2`, `establish_connection :log_db` means  `UserAction` model corresponds to `user_action` table on the database which is specified on `log_db` section in `config/database.yml`.
+In `app/models/user_action.rb #2`, `establish_connection :log_db` means  `UserAction` model corresponds to `user_action` table on the database which is specified on `log_db` section in `config/database.yml`.
 
 
 
