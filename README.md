@@ -6,12 +6,12 @@ This project supposes that there is an application DB (Sqlite3) and an external 
 ## Try it
 You can try this project as below.
 
-1. Edit `log_db_development` section in `config/database.ymls/database.yml.development` to adjust it to your MySQL
-
-2. Create `config/database.yml` by copying.
+1. Create `config/database.yml` by copying from `config/database.ymls/database.yml.development`.
 ```sh
 $ cp config/database.ymls/database.yml.development config/database.yml
 ```
+2. Edit `log_db_development` section in `config/database.yml` to adjust it to your MySQL
+
 3. Create database on Sqlite3
 ```sh
 $ rake db:create
