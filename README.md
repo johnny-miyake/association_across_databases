@@ -8,7 +8,7 @@ You can try this project as below.
 
 1. Edit `log_db_development` section in `config/database.ymls/database.yml.development` to adjust it to your MySQL
 
-2. Create `config/database.yml` as a symbolic link
+2. Create `config/database.yml` by copying.
 ```sh
 $ cp config/database.ymls/database.yml.development config/database.yml
 ```
