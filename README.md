@@ -5,6 +5,7 @@ This project supposes that there is an application DB (Sqlite3) and an external 
 
 ## Try it
 You can try this project as below.
+
 0. Clone this project.
 
 1. Create `config/database.yml` by copying from `config/database.ymls/database.yml.development`.
